@@ -68,8 +68,23 @@ why it stopped overnight. Architecting your microservices is somebody else's job
 
 ## Right now
 
-Adding reranking and hybrid search to the RAG — the two fixes its own evaluation points at — and
-measuring whether they move the number or just the latency. Both are in that repo's "what's next",
-written before building them.
+The RAG's evaluation pointed at hybrid search. I built it, measured it against the same 20
+questions, and **it made retrieval worse**: recall@10 went from 16/16 to 13/16, MRR from 0.865 to
+0.435. It stays in the repo with the verdict written at the top of the file. A recommended
+technique that loses, measured, is worth more than one nobody tried.
 
-andresjmnz92@gmail.com · [LinkedIn](https://linkedin.com/in/andres-jimenez-112915148)
+The same measurement said something I had not asked for. The four questions still failing were
+never retrieval failures — the right section was already arriving at rank **1, 1, 2 and 1**. They
+fail while writing the answer, and weeks of retrieval tuning would have moved a number already at
+its ceiling. Measuring retrieval on its own, with no model in the loop, is what showed it.
+
+So the open question is the one upstream of all of that: **how much does preparing the documents
+change what gets found?** Same corpus, same questions, three conversion methods — raw text
+extraction, and Docling with tables as markdown and as HTML — over the 368 filings in FinanceBench,
+whose 150 questions ship with expert-verified answers and page-level evidence. On that benchmark
+GPT-4-Turbo with a retrieval system gets 81% of questions wrong or refused, so the number will not
+be flattering. That is the point of picking it.
+
+Running now. The result goes up whichever way it lands.
+
+andresjmnz92@gmail.com · [LinkedIn](https://linkedin.com/in/aj1604)
