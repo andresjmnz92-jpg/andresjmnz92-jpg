@@ -7,6 +7,10 @@ billing, prior authorization, ICD-10 cross-referencing. Now I build the systems 
 without a person in the middle. The BPO I founded reached $100K/month in revenue with a team of 10
 and 20+ partner call centers, until US program shutdowns ended every contract in October 2025.
 
+Since August 2026 I work as an AI Automation Engineer at Contractor Marketing Pros, a US marketing
+agency for home service contractors. I also run [Sikorre](https://sikorre.com), where I build AI
+agents and automation for small businesses.
+
 People who know revenue cycle don't build automation. People who build automation have never had
 to check whether an L-Code is billable.
 
@@ -87,6 +91,11 @@ file is loaded into every subagent you start, including the rules that subagent 
 Measured across one day, moving procedure into files that load on demand: **33,662 → 17,408 tokens
 to start one cold agent — −48%, with no rule deleted.** One machine, one day, numbers to reproduce
 rather than trust.
+
+**[finance-analyst-assistant](https://github.com/andresjmnz92-jpg/finance-analyst-assistant)** · Ask a
+question in plain English and it queries the ledger, reads the policy, checks the budget and does the
+arithmetic. Deterministic tools, a router instead of a free-running loop, and a trace of every run.
+Python 3.12, standard library only.
 
 *Also public: [cazador-oracle](https://github.com/andresjmnz92-jpg/cazador-oracle), switched off and
 kept for one measured finding — GitHub's cron accepts "every 5 minutes" and fires every 1–2 hours,
