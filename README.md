@@ -16,7 +16,9 @@ to check whether an L-Code is billable.
 
 I ran that business myself: payroll, clients and partner call centers. I know how a business works
 from the inside, so before I build anything I look for the bottleneck, the step where time or money
-leaks. That is the one I automate first.
+leaks. That is the one I automate first. In `rag-privado` below, the bottleneck was not how I split
+the text. It was the input: the regulation is published as a structured API and I had been indexing
+a PDF of it.
 
 Everything below is public, and every number in it came out of execution data or a test I ran by
 hand.
