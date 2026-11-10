@@ -14,6 +14,10 @@ agents and automation for small businesses.
 People who know revenue cycle don't build automation. People who build automation have never had
 to check whether an L-Code is billable.
 
+I ran that business myself: payroll, clients and partner call centers. I know how a business works
+from the inside, so before I build anything I look for the bottleneck, the step where time or money
+leaks. That is the one I automate first.
+
 Everything below is public, and every number in it came out of execution data or a test I ran by
 hand.
 
