@@ -9,7 +9,7 @@ and 20+ partner call centers, until US program shutdowns ended every contract in
 
 Since August 2026 I work as an AI Automation Engineer at Contractor Marketing Pros, a US marketing
 agency for home service contractors. I also run [Sikorre](https://sikorre.com), where I build AI
-agents and automation for small businesses.
+agents and automation for businesses.
 
 People who know revenue cycle don't build automation. People who build automation have never had
 to check whether an L-Code is billable.
