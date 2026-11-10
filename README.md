@@ -62,38 +62,29 @@ cron accepts "every 5 minutes" and fires every 1 to 2 hours.*
 
 ## How I work
 
-I build n8n workflows from Claude Code through n8n's MCP server rather than by dragging nodes across
-a canvas. `validate_workflow` runs before anything is activated, and I confirm the result by reading
+I build n8n workflows from Claude Code through n8n's MCP server instead of dragging nodes across a
+canvas. `validate_workflow` runs before anything is activated, and I confirm the result by reading
 execution data, not by watching it work once.
 
-My node names are full sentences in Spanish. I am the one reading them at 3am when something
-stopped.
+My node names are full sentences in Spanish. I am the one reading them at 3am when something stops.
 
-**And the habit that shows up in every repo above:** *is this verified, or am I asserting it from
-memory?* Asking that killed three expensive fixes I was about to build, and one of them would have
-cost an afternoon reindexing a corpus that turned out to be fine.
+Before I state a result I ask whether I verified it or I am repeating it from memory. That question
+killed three expensive fixes before I built them. One would have cost an afternoon reindexing a
+corpus that turned out to be fine.
 
-I am not a software engineer. Six semesters of mechatronics, no degree, and currently working
-through Henry's full-stack program. Certified C1 English. I can connect APIs, write the script a
-workflow needs, and find why it stopped overnight.
+I am not a software engineer. Six semesters of mechatronics, no degree, and I am working through
+Henry's full-stack program. Certified C1 English. I can connect APIs, write the script a workflow
+needs, and find why it stopped overnight.
 
 ## Right now
 
-Three evaluations in a row have pointed at the same place, and none of them were designed to.
+At work I build and repair automation for a marketing agency and its clients: CRM syncs, AI chat
+agents, live client dashboards on Cloudflare Workers, and a self-hosted n8n server. That code is
+private.
 
-The HIPAA evaluation said the remaining failures were not retrieval failures — the right section was
-already arriving at rank 1, 1, 2 and 1. Measuring the chunk instead of the section showed the
-sentence that answers had never been in front of the model at all. And the FinanceBench study, built
-to compare PDF parsers, found that **the retriever identifies the right filing 85% of the time and
-the right page 35%**.
-
-Parser, chunker, hybrid search, an agent loop: four things measured, and the ones that were supposed
-to help did not. What keeps showing up instead is the distance between finding the document and
-finding the sentence.
-
-So that is the open question — 50 points that no amount of parser tuning moved. Two approaches are
-written down and not yet built: scoring per chunk rather than per page, and retrieving the small
-fragment while handing the model the section it came from. Whichever way it lands goes up, the same
-as the ones that lost.
+The question from the repos above is still open. The retriever finds the right document 85% of the
+time and the right page 35%. Parser tuning, chunking, hybrid search and an agent loop did not move
+that gap. Two approaches are written down and not built yet: scoring per chunk instead of per page,
+and retrieving the small fragment while handing the model the section it came from.
 
 andresjmnz92@gmail.com · [LinkedIn](https://linkedin.com/in/aj1604)
