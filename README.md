@@ -11,8 +11,8 @@ Since August 2026 I work as an AI Automation Engineer at Contractor Marketing Pr
 agency for home service contractors. I also run [Sikorre](https://sikorre.com), where I build AI
 agents and automation for businesses.
 
-People who know revenue cycle don't build automation. People who build automation have never had
-to check whether an L-Code is billable.
+People who know revenue cycle don't build automation. People who build automation have never run a
+business.
 
 I ran that business myself: payroll, clients and partner call centers. I know how a business works
 from the inside, so before I build anything I look for the bottleneck, the step where time or money
